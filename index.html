@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultancy | Strategic Systems & Operations</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .swiper-pagination-bullet { background: #3b82f6 !important; }
+        .gradient-text { 
+    background: linear-gradient(to right, #60a5fa, #34d399); 
+    background-clip: text; /* Add this standard property */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+    </style>
+</head>
+<body class="bg-[#020617] text-slate-300 selection:bg-blue-500/30">
+
+    <nav class="fixed w-full z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass px-6 py-3 rounded-2xl">
+            <div class="text-xl font-bold tracking-tighter text-white uppercase italic">detangledotcom<span class="text-blue-500 font-black">.</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#services" class="hover:text-blue-400 transition">Services</a>
+                <a href="#testimonials" class="hover:text-blue-400 transition">Testimonials</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Get In Touch</a>
+            </div>
+            <a href="YOUR_NOTION_URL_HERE" target="_blank" class="px-5 py-2 bg-blue-600 rounded-xl text-white text-sm font-semibold hover:bg-blue-500 transition shadow-lg shadow-blue-500/20">Pre-built Templates</a>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-20 px-6 max-w-5xl mx-auto text-center">
+        <div class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest text-blue-400 uppercase glass rounded-full">
+            Available for 2026 Projects
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-8 leading-[1.1]">
+            Build systems that <br><span class="gradient-text">scale with you.</span>
+        </h1>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+            We design high-performance Notion architectures and automated workflows for fast-moving consultancy teams.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="#contact" class="bg-white text-slate-950 px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform">Get Started</a>
+            <a href="#services" class="glass px-8 py-4 rounded-xl font-bold hover:bg-slate-800 transition">View Services</a>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-10 glass rounded-3xl border-t-2 border-t-blue-500/20">
+                <div class="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center text-blue-400 mb-6 font-bold text-xl">01</div>
+                <h3 class="text-xl font-bold text-white mb-3">Audit & Strategy</h3>
+                <p class="text-slate-400 leading-relaxed">Identifying gaps in your current operations and mapping out a digital transformation roadmap.</p>
+            </div>
+            <div class="p-10 glass rounded-3xl border-t-2 border-t-emerald-500/20">
+                <div class="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center text-emerald-400 mb-6 font-bold text-xl">02</div>
+                <h3 class="text-xl font-bold text-white mb-3">Notion Infrastructure</h3>
+                <p class="text-slate-400 leading-relaxed">Building a "Single Source of Truth" that houses your clients, projects and internal knowledge.</p>
+            </div>
+            <div class="p-10 glass rounded-3xl border-t-2 border-t-purple-500/20">
+                <div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center text-purple-400 mb-6 font-bold text-xl">03</div>
+                <h3 class="text-xl font-bold text-white mb-3">Workflow Automation</h3>
+                <p class="text-slate-400 leading-relaxed">Automating repetitive tasks via Make.com or Zapier to save your team 10+ hours every week.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-24 px-6 max-w-4xl mx-auto overflow-hidden">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white mb-4">Client Feedback</h2>
+            <div class="h-1 w-20 bg-blue-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="swiper testimonialSwiper pb-12">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide glass p-10 md:p-14 rounded-[2rem] text-center">
+                    <p class="text-xl md:text-2xl text-slate-200 font-medium mb-8">
+                        "This isn't just a tracking tool; it’s a complete financial command center. The automated calculations and intuitive visualisations have turned our messy data into actionable insights. It’s rare to find a system that balances deep complexity with such a user-friendly interface. A total game-changer for our internal operations."
+                    </p>
+                    <div class="flex items-center justify-center space-x-4">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Aiden&backgroundColor=b6e3f4" class="w-12 h-12 rounded-full border-2 border-blue-500" alt="Client">
+                        <div class="text-left">
+                            <div class="font-bold text-white">Blerim Salihi</div>
+                            <!-- <div class="text-sm text-slate-500 uppercase tracking-widest">CEO, Bloom Agency</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide glass p-10 md:p-14 rounded-[2rem] text-center">
+                    <p class="text-xl md:text-2xl text-slate-200 font-medium mb-8">
+                        "Couldn't find many templates of this kind, really intuitive and nicely setup."
+                    </p>
+                    <div class="flex items-center justify-center space-x-4">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah&backgroundColor=ffdfbf" class="w-12 h-12 rounded-full border-2 border-emerald-500" alt="Client">
+                        <div class="text-left">
+                            <div class="font-bold text-white">Emily Eaton</div>
+                            <!-- <div class="text-sm text-slate-500 uppercase tracking-widest">Founder, TechStack</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 max-w-4xl mx-auto border-t border-slate-900">
+        <div class="glass p-10 md:p-16 rounded-[3rem] relative overflow-hidden">
+            <div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-blue-600/10 blur-[80px] rounded-full"></div>
+            
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-4">Start your transformation</h2>
+                <p class="text-slate-400">Briefly describe your current bottlenecks below.</p>
+            </div>
+
+            <form action="https://formspree.io/f/xkovqkje" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                    <label class="text-sm font-semibold text-slate-400 ml-1">Your Name</label>
+                    <input type="text" name="name" required class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                </div>
+                <div class="space-y-2">
+                    <label class="text-sm font-semibold text-slate-400 ml-1">Email Address</label>
+                    <input type="email" name="email" required class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                </div>
+                <div class="space-y-2 md:col-span-2">
+                    <label class="text-sm font-semibold text-slate-400 ml-1">What can I help with?</label>
+                    <textarea name="message" rows="5" required class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition"></textarea>
+                </div>
+                <button type="submit" class="md:col-span-2 w-full bg-blue-600 text-white font-bold py-5 rounded-2xl hover:bg-blue-500 transition-all shadow-xl shadow-blue-500/20 active:scale-95">Send Enquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center border-t border-slate-900">
+        <div class="text-slate-600 text-sm">
+            &copy; 2026 detangledotcom. All rights reserved. <br>
+            <!-- <-span class="mt-2 inline-block font-medium opacity-50">Powered by GitHub Pages & Notion</span>-->
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.testimonialSwiper', {
+            loop: true,
+            spaceBetween: 30,
+            autoplay: { delay: 6000, disableOnInteraction: false },
+            pagination: { el: '.swiper-pagination', clickable: true },
+        });
+    </script>
+</body>
+</html>
